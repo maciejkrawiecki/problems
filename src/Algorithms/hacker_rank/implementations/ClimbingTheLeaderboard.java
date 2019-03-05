@@ -32,7 +32,6 @@ public class ClimbingTheLeaderboard {
             }
 
             result[i] = set.size()+1;
-
         }
 
         return result;
