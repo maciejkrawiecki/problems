@@ -3,7 +3,7 @@ package Algorithms.hacker_rank.implementations;
 public class MinimumDistances {
     static int minimumDistances(int[] a) {
 
-        int min = 2147483647;
+        int min = Integer.MAX_VALUE;
 
         for (int i = 0; i < a.length; i++) {
 
@@ -19,8 +19,8 @@ public class MinimumDistances {
             }
         }
 
-        // i know it's stupid XD
-        if (min == 2147483647) return -1;
-        return min;
+
+
+        return min == Integer.MAX_VALUE ? -1 : min;
     }
 }
