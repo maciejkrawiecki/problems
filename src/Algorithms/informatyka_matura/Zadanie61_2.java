@@ -13,9 +13,6 @@ public class Zadanie61_2 {
         List<Integer> cubesOfNumbers = new ArrayList<>();
         List<Integer> numbers = new ArrayList<>();
 
-        for (String n : string.split(" ")) {
-            numbers.add(Integer.valueOf(n));
-        }
 
         for (int i = 0; i<numbers.size(); i++) {
             for (int j = 0; j <=numbers.get(i); j++) {

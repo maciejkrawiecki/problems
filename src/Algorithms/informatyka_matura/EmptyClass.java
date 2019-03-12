@@ -1,5 +1,8 @@
 package Algorithms.informatyka_matura;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,9 +36,26 @@ public class EmptyClass {
 
     public static void main(String[] args) {
 
-        String str = "1100101";
+        BufferedReader bf = null;
+        String nameOfFile = "ciagi.txt"; // nazwa pliku
+        List<String> strings = new ArrayList<>(); // lista do której bede dodawal
 
-        System.out.println(checkIfIsSemiFirstNumber(str));
+        try {
+            String line;
+            bf = new BufferedReader(new FileReader(nameOfFile));
+
+            do {
+                line = bf.readLine(); // wczytuje wiersz i przypisuje go do line
+                if (line != null) {
+                    for (String s: line.split(",")){
+                        strings.add(s);
+                    }
+                }
+            } while (line != null);
+
+        } catch (IOException ex) {
+            ex.getMessage();
+        }
 
     }
 }
