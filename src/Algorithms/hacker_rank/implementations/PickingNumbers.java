@@ -1,6 +1,5 @@
 package Algorithms.hacker_rank.implementations;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -13,7 +12,6 @@ public class PickingNumbers {
         int max = 0;
         int count = 0;
         int current = a.get(0);
-
 
         for (int i = 0; i < a.size(); i++) {
 
